@@ -1,2 +1,3 @@
-class Task < ApplicationRecord
+class Task < ApplicationRecordva
+  validates :name, presence: true
 end
