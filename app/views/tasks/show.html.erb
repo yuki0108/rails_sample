@@ -9,19 +9,19 @@
         <td><%= @task.id %></td>
       </tr>
       <tr>
-        <th><%= Task.human_attribute_name(:name) %></th>
+        <th><%= Task.human_attribute_name(:名称) %></th>
         <td><%= @task.name %></td>
       </tr>
       <tr>
-        <th><%= Task.human_attribute_name(:description) %></th>
-        <td><%= simple_format(h(@task.description), {}, sanitize: false, wrapper_tag: 'div') %></td>
+        <th><%= Task.human_attribute_name(:詳しい説明) %></th>
+        <td><%= auto_link(simple_format(h(@task.description), {}, sanitize: false, wrapper_tag: 'div')) %></td>
       </tr>
       <tr>
-        <th><%= Task.human_attribute_name(:created_at) %></th>
+        <th><%= Task.human_attribute_name(:登録日時) %></th>
         <td><%= @task.created_at %></td>
       </tr>
       <tr>
-        <th><%= Task.human_attribute_name(:updated_at) %></th>
+        <th><%= Task.human_attribute_name(:更新日時) %></th>
         <td><%= @task.updated_at %></td>
       </tr>
     </tbody>
