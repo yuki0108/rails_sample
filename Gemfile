@@ -63,3 +63,4 @@ gem 'rails_autolink'
 gem "rspec-rails", "~> 4.0.1"
 gem 'ransack'
 gem 'kaminari'
+gem 'sidekiq'
