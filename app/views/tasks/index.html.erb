@@ -35,7 +35,7 @@
       </tr>
     </thead>
       <% @tasks.each do |task| %>
-        <tr>
+        <tr id="task-#{task.id}">
           <td><%= link_to task.name, task_path(task.id) %></td>
           <td><%= task.created_at %></td>
           <td>
